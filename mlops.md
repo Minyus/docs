@@ -188,8 +188,8 @@ flowchart LR
 
 MLOps Maturity Levels
 
-- 2 levels by Google: https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
+- Level 0-2 by Google: https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
 
-- 4 levels by Microsoft: https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mlops/mlops-maturity-model
+- Level 0-4 by Microsoft: https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mlops/mlops-maturity-model
 
-- 7 levels by MLOps Community: https://mlops.community/mlops-maturity-assessment/
+- Level 1-7 by MLOps Community: https://mlops.community/mlops-maturity-assessment/
