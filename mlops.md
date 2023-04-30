@@ -16,20 +16,24 @@ Reference:
 <p style="text-align:center;">Yusuke Minami</p>
 
 
-## What is MLOps?
+## [1. Introduction]
 
-- ML engineering practice
-- designing and maintaining productive ML
-- ML automated and operationalized with DevOps
+What is MLOps?
+To answer this question, researched:
 
-## What is DevOps?
+(a) principles
+(b) components
+(c) roles
+(d) architecture
+
+## [2. Foundations of DevOps]
 
 - emerged in the years 2008/2009 and aims to reduce issues in software development 
 - the goal of eliminating the gap between development and operations 
 - ensures automation with continuous integration, continuous delivery, and continuous deployment (CI/CD), thus allowing for fast, frequent, and reliable releases.
 - designed to ensure continuous testing, quality assurance, continuous monitoring, logging, and feedback loops. 
 
-## 6 groups of DevOps tools
+## [2. Foundations of DevOps] 6 groups of DevOps tools
 
 - collaboration and knowledge sharing (e.g., Slack, Trello, GitLab wiki)
 - source code management (e.g., GitHub, GitLab)
@@ -38,7 +42,13 @@ Reference:
 - deployment automation (e.g., Kubernetes, Docker),
 - monitoring and logging (e.g., Prometheus, Logstash)
 
-## Methodology 1: Literature review
+## [3. Methodology]
+
+1. Literature review
+2. Tools
+3. Interviews
+
+## [3. Methodology] 1. Literature review
 
 27 peer-reviewed articles found by search query:
 - "Machine Learning" AND either of:
@@ -50,29 +60,29 @@ Reference:
 - "MLOps"
 - "CD4ML"
 
-## Methodology 2: Tools
+## [3. Methodology] 2. Tools
 
 ![h:600](https://cdn-ak.f.st-hatena.com/images/fotolife/n/nsakki55/20230122/20230122200036.png)
 
-## Methodology 2: Tools (cont'd)
+## [3. Methodology] 2. Tools (cont'd)
 
 ![h:200](https://cdn-ak.f.st-hatena.com/images/fotolife/n/nsakki55/20230122/20230122200331.png)
 
-## Methodology 3: Interviews
+## [3. Methodology] 3. Interviews
 
 8 professionals found in Linkedin
 
 ![h:550](https://cdn-ak.f.st-hatena.com/images/fotolife/n/nsakki55/20230122/20230122200231.png)
 
-## 9 Principles
+## [4. Results] 1. Principles
 
 P1. CI/CD automation: continuous integration/delivery/deployment
 
 P2. Workflow orchestration
 
-P3. Reproducibility: an ML experiment and obtain the exact same results 
+P3. Reproducibility: obtain the exact same results 
 
-P4. Versioning: Versioning ensures the versioning of data, model, and code to enable not only reproducibility, but also traceability (for compliance and auditing reasons) 
+P4. Versioning of data, model, and code
 
 P5. Collaboration: work collaboratively on data, model, and code
 
@@ -84,19 +94,19 @@ P8. Continuous monitoring: infrastructure resources and model serving performanc
 
 P9 Feedback loops
 
-## 9 Components
+## [4. Results] 2. Components
 
-C1. CI/CD Component (P1, P6, P9)
-C2. Source Code Repository (P4, P5)
-C3. Workflow Orchestration Component (P2, P3, P6)
-C4. Feature Store System (P3, P4)
-C5. Model Training Infrastructure (P6)
-C6. Model Registry (P3, P4)
-C7. ML Metadata Stores (P4, P7)
-C8. Model Serving Component (P1)
-C9. Monitoring Component (P8, P9)
+C1. CI/CD Component (P1, P6, P9) e.g. Jenkins, GitHub actions
+C2. Source Code Repository (P4, P5) e.g. Bitbucket, GitLab, GitHub, Gitea
+C3. Workflow Orchestration Component (P2, P3, P6) e.g. Apache Airflow, Kubeflow Pipelines, Luigi, AWS SageMaker Pipelines, Azure Pipelines
+C4. Feature Store System (P3, P4) e.g. Google Feast, Amazon AWS Feature Store, Tecton.ai, Hopswork.ai
+C5. Model Training Infrastructure (P6) e.g. Kubernetes, Red Hat OpenShift
+C6. Model Registry (P3, P4) e.g. MLflow, AWS SageMaker Model Registry, Microsoft Azure ML Model Registry, Nepture.ai
+C7. ML Metadata Stores (P4, P7) e.g. Kubeflow Pipelines, AWS SageMaker Pipelines, Azure ML, IBM Watson Studio, MLflow
+C8. Model Serving Component (P1) e.g. KServing, TensorFlow Serving, Seldion.io
+C9. Monitoring Component (P8, P9) e.g. Prometheus with Grafana, ELK stack, TensorBoard, Kubeflow, MLflow, AWS SageMaker model monitor, cloud watch
 
-## 7 Roles
+## [4. Results] 3. Roles
 
 R1. Business Stakeholder (similar roles: Product Owner, Project Manager)
 R2. Solution Architect (similar role: IT Architect)
@@ -106,15 +116,15 @@ R5. Software Engineer
 R6. DevOps Engineer
 R7. ML Engineer/MLOps Engineer
 
-## Roles around ML Engineer/MLOps Engineer
+## [4. Results] 3. Roles around ML Engineer/MLOps Engineer
 
 ![h:600](https://cdn-ak.f.st-hatena.com/images/fotolife/n/nsakki55/20230122/20230122200808.png)
 
-## MLOps workflow 
+## [5. Architecture and Workflow]
 
 ![h:600](https://cdn-ak.f.st-hatena.com/images/fotolife/n/nsakki55/20230122/20230122202233.png)
 
-## MLOps workflow (core part extracted and restructured)
+## [5. Architecture and Workflow] MLOps workflow (core part extracted and restructured)
 
 <div class="mermaid">
 flowchart LR
@@ -133,27 +143,40 @@ flowchart LR
     end
 </div>
 
-## Conceptualization: Define MLOps 
+## [6. Conceptualization] Define MLOps 
 
-- MLOps (Machine Learning Operations) is a paradigm, including aspects like best practices, sets of concepts, as well as a development culture when it comes to the end-to-end conceptualization, implementation, monitoring, deployment, and scalability of machine learning products. 
+- MLOps (Machine Learning Operations) is a paradigm including:
+  - best practices
+  - concepts
+  - development culture 
 
-- Most of all, it is an engineering practice that leverages three contributing disciplines: machine learning, software engineering (especially DevOps), and data engineering. 
+- engineering practice that leverages:
+  - machine learning
+  - software engineering (especially DevOps)
+  - data engineering. 
 
-- MLOps is aimed at productionizing machine learning systems by bridging the gap between development (Dev) and operations (Ops). 
+- bridge the gap between development (Dev) and operations (Ops). 
 
-## Open Challenges
+## [7. Open Challenges] 
 
 - Organizational challenges
+  - need culture shift away from model-driven toward product-oriented
+  - teams work in silos rather than in cooperative setups
+  - decision-makers need to be convinced that an increased MLOps maturity and a product-focused mindset will yield clear business improvements
 - ML system challenges
+  - difficult to precisely estimate the necessary infrastructure resources
+  - require a high level of flexibility in terms of scalability of the infrastructure
 - Operational challenges
+  - require governance, versioning of data, model, and code to ensure robustness and reproducibility
+  - failures can be a combination of ML infrastructure and software
 
-## Conclusion
+## [8. Conclusion]
 
-- The academic space has focused intensively on machine learning model building and benchmarking, but too little on operating complex machine learning systems in real-world scenarios
-- Defined MLOps and its associated concepts
-- Hopefully assist successful ML projects in the future
+- the academic space has focused intensively on machine learning model building and benchmarking, but too little on operating complex machine learning systems in real-world scenarios
+- MLOps and its associated concepts were defined
+- common understanding will hopefully  assist successful ML projects in the future
 
-## References
+## References for this summary
 
 - https://arxiv.org/abs/2205.02302
 - https://nsakki55.hatenablog.com/entry/2023/01/23/102630
