@@ -181,5 +181,15 @@ flowchart LR
 
 ## References for this summary
 
-- https://arxiv.org/abs/2205.02302
-- https://nsakki55.hatenablog.com/entry/2023/01/23/102630
+- Original paper: https://arxiv.org/abs/2205.02302
+- Summary blog: https://nsakki55.hatenablog.com/entry/2023/01/23/102630
+
+## Appendix
+
+MLOps Maturity Levels
+
+- 2 levels by Google: https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
+
+- 4 levels by Microsoft: https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mlops/mlops-maturity-model
+
+- 7 levels by MLOps Community: https://mlops.community/mlops-maturity-assessment/
