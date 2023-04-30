@@ -5,7 +5,10 @@ headingDivider: 2
 ---
 
 <!--
-To enable HTML, add the following in settings.json
+To convert this markdown to slides, Install "Marp for VS Code" in VS Code.
+https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode
+
+To enable HTML for the Mermaid diagram, add the following line in VS Code's settings.json
     "markdown.marp.enableHtml" : true
 Reference:
  https://laravel-school.com/snippet/how-to-enable-mermaid-or-html-directive-with-marp-in-vs-code-62 
