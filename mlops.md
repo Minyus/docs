@@ -18,11 +18,28 @@ Reference:
 
 <p style="text-align:center;">Yusuke Minami</p>
 
+## "Machine Learning Operations (MLOps): Overview, Definition, and Architecture"
+
+8 Sections
+
+1. Introduction
+2. Foundations of DevOps
+3. Methodology
+4. Results
+5. Architecture and Workflow
+6. Conceptualization
+7. Open Challenges
+8. Conclusion
 
 ## [1. Introduction]
 
+ML community has focused extensively on the building of ML models, but not on 
+(a) building production-ready ML products
+(b) automate & operate in a real-world setting 
+
+To address these issues, we explore MLOps, the emerging ML engineering practice.
 What is MLOps?
-To answer this question, researched:
+To answer this question,  we researched:
 
 (a) principles
 (b) components
@@ -65,6 +82,7 @@ To answer this question, researched:
 
 ## [3. Methodology] 2. Tools
 
+11 tools 
 ![h:600](https://cdn-ak.f.st-hatena.com/images/fotolife/n/nsakki55/20230122/20230122200036.png)
 
 ## [3. Methodology] 2. Tools (cont'd)
@@ -76,6 +94,10 @@ To answer this question, researched:
 8 professionals found in Linkedin
 
 ![h:550](https://cdn-ak.f.st-hatena.com/images/fotolife/n/nsakki55/20230122/20230122200231.png)
+
+## [4. Results] Principles within Components
+
+![h:600](https://cdn-ak.f.st-hatena.com/images/fotolife/n/nsakki55/20230122/20230122200645.png)
 
 ## [4. Results] 1. Principles
 
@@ -95,7 +117,7 @@ P7. ML metadata tracking/logging: used parameters, the resulting performance met
 
 P8. Continuous monitoring: infrastructure resources and model serving performance 
 
-P9 Feedback loops
+P9. Feedback loops: e.g. model engineering to feature engineering, monitoring to retraining
 
 ## [4. Results] 2. Components
 
@@ -132,7 +154,7 @@ R7. ML Engineer/MLOps Engineer
 <div class="mermaid">
 flowchart LR
     subgraph Serving
-        repo --> CI[continous\nintegration\n/ continuous\ndelivery\n\n] --> CD[continuous\ndeployment\n\n] --> serving[model\nserving\n\n] --> monitoring
+        repo --> CI[continuous\nintegration\n/ continuous\ndelivery\n\n] --> CD[continuous\ndeployment\n\n] --> serving[model\nserving\n\n] --> monitoring
         CI --> artifact_store[artifact\nstore\n e.g. \nImage \n Registry\n\n] -.-> CD
         serving_code[model\nserving\ncode\n\n] --> repo
         Model_Registry --> CD
