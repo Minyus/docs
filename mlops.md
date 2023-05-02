@@ -101,45 +101,37 @@ To answer this question,  we researched:
 
 ## [4. Results] 1. Principles
 
-P1. CI/CD automation: continuous integration/delivery/deployment
-
-P2. Workflow orchestration
-
-P3. Reproducibility: obtain the exact same results 
-
-P4. Versioning of data, model, and code
-
-P5. Collaboration: work collaboratively on data, model, and code
-
-P6. Continuous ML training & evaluation: retraining of the ML model based on new data
-
-P7. ML metadata tracking/logging: used parameters, the resulting performance metrics, data and code used
-
-P8. Continuous monitoring: infrastructure resources and model serving performance 
-
-P9. Feedback loops: e.g. model engineering to feature engineering, monitoring to retraining
+- P1. CI/CD automation: continuous integration/delivery/deployment
+- P2. Workflow orchestration: coordinate tasks based on relationships & dependencies
+- P3. Reproducibility: obtain the exact same results 
+- P4. Versioning of data, model, and code
+- P5. Collaboration: work collaboratively on data, model, and code
+- P6. Continuous ML training & evaluation: retraining of ML models based on new data
+- P7. ML metadata tracking/logging: used parameters, the resulting performance metrics, data and code used
+- P8. Continuous monitoring: infrastructure resources and model serving performance 
+- P9. Feedback loops: e.g. model engineering to feature engineering, monitoring to retraining
 
 ## [4. Results] 2. Components
 
-C1. CI/CD Component (P1, P6, P9) e.g. Jenkins, GitHub actions
-C2. Source Code Repository (P4, P5) e.g. Bitbucket, GitLab, GitHub, Gitea
-C3. Workflow Orchestration Component (P2, P3, P6) e.g. Apache Airflow, Kubeflow Pipelines, Luigi, AWS SageMaker Pipelines, Azure Pipelines
-C4. Feature Store System (P3, P4) e.g. Google Feast, Amazon AWS Feature Store, Tecton.ai, Hopswork.ai
-C5. Model Training Infrastructure (P6) e.g. Kubernetes, Red Hat OpenShift
-C6. Model Registry (P3, P4) e.g. MLflow, AWS SageMaker Model Registry, Microsoft Azure ML Model Registry, Nepture.ai
-C7. ML Metadata Stores (P4, P7) e.g. Kubeflow Pipelines, AWS SageMaker Pipelines, Azure ML, IBM Watson Studio, MLflow
-C8. Model Serving Component (P1) e.g. KServing, TensorFlow Serving, Seldion.io
-C9. Monitoring Component (P8, P9) e.g. Prometheus with Grafana, ELK stack, TensorBoard, Kubeflow, MLflow, AWS SageMaker model monitor, cloud watch
+- C1. CI/CD Component (P1, P6, P9) e.g. Jenkins, GitHub actions
+- C2. Source Code Repository (P4, P5) e.g. Bitbucket, GitLab, GitHub, Gitea
+- C3. Workflow Orchestration Component (P2, P3, P6) e.g. Apache Airflow, Kubeflow Pipelines, Luigi, AWS SageMaker Pipelines, Azure Pipelines
+- C4. Feature Store System (P3, P4) e.g. Google Feast, Amazon AWS Feature Store
+- C5. Model Training Infrastructure (P6) e.g. Kubernetes, Red Hat OpenShift
+- C6. Model Registry (P3, P4) e.g. MLflow, AWS SageMaker Model Registry, Microsoft Azure ML Model Registry, Nepture.ai
+- C7. ML Metadata Stores (P4, P7) e.g. Kubeflow Pipelines, AWS SageMaker Pipelines, Azure ML, IBM Watson Studio, MLflow
+- C8. Model Serving Component (P1) e.g. KServing, TensorFlow Serving, Seldion.io
+- C9. Monitoring Component (P8, P9) e.g. Prometheus with Grafana, ELK stack, TensorBoard, Kubeflow, MLflow, AWS SageMaker model monitor, cloud watch
 
 ## [4. Results] 3. Roles
 
-R1. Business Stakeholder (similar roles: Product Owner, Project Manager)
-R2. Solution Architect (similar role: IT Architect)
-R3. Data Scientist (similar roles: ML Specialist, ML Developer)
-R4. Data Engineer (similar role: DataOps Engineer)
-R5. Software Engineer
-R6. DevOps Engineer
-R7. ML Engineer/MLOps Engineer
+- R1. Business Stakeholder (similar roles: Product Owner, Project Manager)
+- R2. Solution Architect (similar role: IT Architect)
+- R3. Data Scientist (similar roles: ML Specialist, ML Developer)
+- R4. Data Engineer (similar role: DataOps Engineer)
+- R5. Software Engineer
+- R6. DevOps Engineer
+- R7. ML Engineer/MLOps Engineer
 
 ## [4. Results] 3. Roles around ML Engineer/MLOps Engineer
 
