@@ -191,7 +191,7 @@ flowchart LR
 
 - the academic space has focused intensively on machine learning model building and benchmarking, but too little on operating complex machine learning systems in real-world scenarios
 - MLOps and its associated concepts were defined
-- common understanding will hopefully  assist successful ML projects in the future
+- common understanding will hopefully assist successful ML projects in the future
 
 ## References for this summary
 
