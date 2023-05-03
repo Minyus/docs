@@ -10,6 +10,7 @@ https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode
 
 To enable HTML for the Mermaid diagram, add the following line in VS Code's settings.json
     "markdown.marp.enableHtml" : true
+and enclose by <div class="mermaid"> and </div>.
 Reference:
  https://laravel-school.com/snippet/how-to-enable-mermaid-or-html-directive-with-marp-in-vs-code-62 
 -->
@@ -141,9 +142,11 @@ To answer this question,  we researched:
 
 ![h:600](https://cdn-ak.f.st-hatena.com/images/fotolife/n/nsakki55/20230122/20230122202233.png)
 
-## [5. Architecture and Workflow] MLOps workflow (core part extracted and restructured)
+## [5. Architecture and Workflow] MLOps workflow (simplified)
 
-<div class="mermaid">
+[![](https://mermaid.ink/img/pako:eNp9U11rwjAU_SshD2MD5977sBcdQ9AXfUxF7tprDbRJSVKniP99N42pqWwLhd6Pk9OTc9MLL3SJPOP7Wn8XBzCOLde5YrRs91UZaA9sg-YoVRWqfhlsNXt9fWezhSi0clJ1urN5rqRySHuc1IqyNzZqlljLI5ozhfRsA8FcPGDaWp8bVC5F2SBANCS1puotTyGNVtJpM5I5W_QtOpPcQ-F2lgAoYup5fIHeDKfVlFGwaKBCH7A1VtK6ROy0V3snv2nYeft-EebLqT5v2X3zyuN38Rs3J0IbVflg_8epRSO9J8HYgQVPraZ59dLGjHeMMyBV1BmgsZScRXemQCvm4IAUb0KaygcF9dlKK8oAiXmKaemMse9jGC7CEztCLcuYsmFLlDIYOGhLeO97B9iIbgAGP0R4UTWiR0MQz5_SN_uB9L2X7R92iUTN__OMwHAV0YG3QayWXsQtS66bJxmGzSe8QdOALOknvPhyzt0BG8x5RmGJe-hql_NcXQkKndObsyp45kyHE961xI1zCXRVGp7tobZ4_QEr7FNX?type=png)](https://mermaid.live/edit#pako:eNp9U11rwjAU_SshD2MD5977sBcdQ9AXfUxF7tprDbRJSVKniP99N42pqWwLhd6Pk9OTc9MLL3SJPOP7Wn8XBzCOLde5YrRs91UZaA9sg-YoVRWqfhlsNXt9fWezhSi0clJ1urN5rqRySHuc1IqyNzZqlljLI5ozhfRsA8FcPGDaWp8bVC5F2SBANCS1puotTyGNVtJpM5I5W_QtOpPcQ-F2lgAoYup5fIHeDKfVlFGwaKBCH7A1VtK6ROy0V3snv2nYeft-EebLqT5v2X3zyuN38Rs3J0IbVflg_8epRSO9J8HYgQVPraZ59dLGjHeMMyBV1BmgsZScRXemQCvm4IAUb0KaygcF9dlKK8oAiXmKaemMse9jGC7CEztCLcuYsmFLlDIYOGhLeO97B9iIbgAGP0R4UTWiR0MQz5_SN_uB9L2X7R92iUTN__OMwHAV0YG3QayWXsQtS66bJxmGzSe8QdOALOknvPhyzt0BG8x5RmGJe-hql_NcXQkKndObsyp45kyHE961xI1zCXRVGp7tobZ4_QEr7FNX)
+
+<font size="1">
 flowchart LR
     subgraph Serving
         repo --> CI[continuous\nintegration\n/ continuous\ndelivery\n\n] --> CD[continuous\ndeployment\n\n] --> serving[model\nserving\n\n] --> monitoring
@@ -158,7 +161,7 @@ flowchart LR
         training_code[training\ncode\n\n] --> repo
         training --> metadata[ML\nmetadata\nstore\n\n]
     end
-</div>
+</font>
 
 ## [6. Conceptualization] Define MLOps 
 
